@@ -1,8 +1,8 @@
-# ─── FISM base-model config ────────────────────────────────────────────────────
+# ─── EASE base-model config ────────────────────────────────────────────────────
 # Matches RecBole's own config format exactly.
-# Run with: python run_recbole.py --config_files configs/FISM/ml-100k.yaml
+# Run with: python run_recbole.py --config_files configs/EASE/ml-100k.yaml
 
-model: FISM
+model: EASE
 dataset: ml-100k
 data_path: dataset/
 
@@ -19,7 +19,7 @@ learning_rate: 0.001
 eval_step: 10
 stopping_step: 20
 
-reg_weights: [1e-2, 1e-2]       # (list of float) The L2 regularization weights.
+reg_weight: 250.0               # (float) The L2 regularization weight.
 
 # Evaluation
 eval_args:
