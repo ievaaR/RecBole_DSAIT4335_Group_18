@@ -58,7 +58,7 @@ MODELS = {
 
     "UserKNN": {
         # Important:
-        # Your course implementation uses ItemKNN class
+        # Implementation uses ItemKNN class
         # with knn_method='user' in the UserKNN YAML.
         "recbole_model": "ItemKNN",
         "config_file": "recbole/config/UserKNN/ml-100k.yaml",
