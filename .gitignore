@@ -1,12 +1,18 @@
-#  models
+# RecBole generated files
+/saved/
+/log/
+/log_tensorboard/
 
-.vscode/
-.idea/
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
 *.pyc
-*.log
-log_tensorboard
-*.lprof
-*.egg-info/
-docs/build/
-wandb/*
-/ray_log*
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.venv/
+venv/
