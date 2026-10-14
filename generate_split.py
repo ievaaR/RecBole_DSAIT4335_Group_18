@@ -7,7 +7,7 @@ def main():
     # 3. Define configuration dictionary
     config_dict = {
         'dataset': 'ml-100k',
-        'data_path': '/content/drive/MyDrive/Colab_Notebooks/CIKMv1/RecBole/dataset',
+        "data_path": "./dataset",
         'eval_args': {
             'split': {'RS': [0.8, 0.1, 0.1]},
             'order': 'RO',
@@ -28,7 +28,7 @@ def main():
     train_data, valid_data, test_data = data_preparation(config, dataset)
 
     # 7. Export split interactions
-    save_dir = '/content/drive/MyDrive/Colab_Notebooks/CIKMv1/RecBole/'
+    save_dir = "./saved_splits"
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
 

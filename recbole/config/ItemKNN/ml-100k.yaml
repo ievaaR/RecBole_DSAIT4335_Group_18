@@ -9,6 +9,7 @@ data_path: dataset/
 # Training
 k: 100                          # (int) The neighborhood size.
 knn_method: 'item'              # (string) The method to calculate the similarity matrix ['item','user']
+shrink: 100
 
 # Evaluation
 eval_args:
